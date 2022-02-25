@@ -13,7 +13,7 @@ namespace Bakery.Models
     {
       if (this.Amount == 1)
       {
-        return 5;
+        return 2;
       }
       else if (this.Amount ==2)
       {
