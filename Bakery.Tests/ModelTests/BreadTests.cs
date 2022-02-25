@@ -34,7 +34,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void GetPrice_ReturnsInt_Int()
     {
-      int num = 4;
+      int num = 1;
       Bread breadOne = new Bread(num);
       Assert.AreEqual(5, breadOne.GetPrice());
     }
