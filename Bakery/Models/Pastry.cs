@@ -17,7 +17,7 @@ namespace Bakery.Models
       }
       else if (this.Amount ==2)
       {
-        return 10;
+        return 4;
       }
       else
       {
