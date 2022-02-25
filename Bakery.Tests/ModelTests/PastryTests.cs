@@ -35,7 +35,7 @@ namespace Bakery.Tests
     {
       int num = 1;
       Pastry pastryOne = new Pastry(num);
-      Assert.AreEqual(5, pastryOne.GetPrice());
+      Assert.AreEqual(2, pastryOne.GetPrice());
     }
     [TestMethod]
     public void GetPrice_Return0_Int()
