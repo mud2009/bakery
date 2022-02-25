@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Shapes
+namespace Bakery
 {
   public class Program
   {
