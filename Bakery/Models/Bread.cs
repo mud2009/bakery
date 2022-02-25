@@ -8,5 +8,9 @@ namespace Bakery.Models
     {
       Amount = amount;
     }
+
+    public int GetPrice(){
+      return 5;
+    }
   }
 }
