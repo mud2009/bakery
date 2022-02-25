@@ -13,6 +13,10 @@ namespace Bakery.Models
       if (this.Amount == 1)
       {
         return 5;
+      } 
+      else if (this.Amount ==2)
+      {
+        return 10;
       }
       else
       {
