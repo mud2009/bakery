@@ -17,7 +17,7 @@ namespace Bakery.Tests
     public void PastryConstructor_GetsAmount_Int()
     {
       int num = 1;
-      Pastry pastryOne = new Pastry();
+      Pastry pastryOne = new Pastry(num);
       Assert.AreEqual(num, pastryOne.Amount);
     }
   }
