@@ -7,10 +7,10 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void BreadConstructor_ConstructsBread_Bread()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      // Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      Bread breadOne = new Bread();
+      Assert.AreEqual(typeof(Bread), breadOne.GetType());
     }
   }
 }
