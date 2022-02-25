@@ -11,7 +11,14 @@ namespace Bakery.Models
 
     public int GetPrice()
     {
-      return 5;
+      if (this.Amount == 1)
+      {
+        return 5;
+      }
+      else
+      {
+        return 0;
+      }
     }
   }
 }
