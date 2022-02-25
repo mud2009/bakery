@@ -15,6 +15,10 @@ namespace Bakery.Models
       {
         return 5;
       }
+      else if (this.Amount ==2)
+      {
+        return 10;
+      }
       else
       {
         return 0;
