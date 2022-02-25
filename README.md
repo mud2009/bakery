@@ -15,7 +15,7 @@ This console application allows users to access the prices of different products
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop.
-* Navigate to directory _bakery_ in your terminal.
+* Navigate to directory `bakery` in your terminal.
 * To run the application, run `dotnet run --project Bakery/`.
 * To run tests on the program, run `dotnet test Bakery.Tests`.
 
