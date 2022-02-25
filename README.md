@@ -7,6 +7,7 @@
 ## Technologies Used
 
 * C#
+* .NET
 
 ## Description
 
