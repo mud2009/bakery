@@ -21,7 +21,7 @@ namespace Bakery.Tests
       Assert.AreEqual(num, breadOne.Amount);
     }
 
-        [TestMethod]
+    [TestMethod]
     public void BreadConstructor_SetsAmount_Int()
     {
       int num = 4;
