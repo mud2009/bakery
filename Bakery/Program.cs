@@ -8,35 +8,31 @@ namespace Bakery
   {
     public static void Main()
     {
-      System.Console.WriteLine("Welcome to the bakery");
-      System.Console.WriteLine("One loaf of bread is $5");
-      System.Console.WriteLine("One pastry is $2");
-      System.Console.WriteLine("How many loaves of bread would you like?");
+      System.Console.WriteLine("  Welcome to the Pierre's bakery");
+      System.Console.WriteLine("  One loaf of bread is $5");
+      System.Console.WriteLine("  One pastry is $2");
+      System.Console.WriteLine("  How many loaves of bread would you like?");
       string stringLoaves = Console.ReadLine();
       int loaves;
-      bool loavesSuccess = int.TryParse(stringLoaves, out loaves);
-      if (loavesSuccess)
+      while(!int.TryParse(stringLoaves, out loaves))
       {
-        // whatever the code should do
+        System.Console.WriteLine("  ---Please enter a number---");
+        stringLoaves = Console.ReadLine();
       }
-      else
-      {
-        System.Console.WriteLine("---Please enter a number---");
-        Main();
-      }
-      System.Console.WriteLine("How many pastries would you like?");
+      Bread breadCount = new Bread(loaves);
+      System.Console.WriteLine("  How many pastries would you like?");
       string stringPastries = Console.ReadLine();
       int pastries;
-      bool pastriesSuccess = int.TryParse(stringPastries, out pastries);
-      if (pastriesSuccess)
+      while(!int.TryParse(stringPastries, out pastries))
       {
-        // whatever the code should do
+        System.Console.WriteLine("  ---Please enter a number---");
+        stringPastries = Console.ReadLine();
       }
-      else
-      {
-        System.Console.WriteLine("---Please enter a number---");
-        Main();
-      }
+      Pastry pastryCount = new Pastry(pastries);
+      int totalCost = breadCount.GetPrice() + pastryCount.GetPrice();
+      System.Console.WriteLine($" {breadCount.Amount} loaves of bread for ${breadCount.GetPrice()}");
+      System.Console.WriteLine($" {breadCount.Amount} pastries for ${pastryCount.GetPrice()}");
+      System.Console.WriteLine($" Your total will be ${totalCost}");
     }
   }
 }
