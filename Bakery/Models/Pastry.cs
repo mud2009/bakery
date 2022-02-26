@@ -11,13 +11,21 @@ namespace Bakery.Models
 
     public int GetPrice()
     {
-      if (this.Amount == 1)
+      if (this.Amount > 0)
       {
-        return 2;
-      }
-      else if (this.Amount ==2)
-      {
-        return 4;
+        int cost = 0;
+        for (int i = 1; i <= this.Amount; i ++)
+        {
+          if (i % 3 == 0)
+          {
+            cost += 1;
+          }
+          else
+          {
+            cost += 2;
+          }
+        }
+        return cost;
       }
       else
       {
