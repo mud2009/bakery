@@ -16,7 +16,7 @@ namespace Bakery
       int loaves;
       while(!int.TryParse(stringLoaves, out loaves))
       {
-        System.Console.WriteLine("  ---Please enter a number---");
+        System.Console.WriteLine("  ---Please enter a number of loaves---");
         stringLoaves = Console.ReadLine();
       }
       Bread breadCount = new Bread(loaves);
@@ -25,7 +25,7 @@ namespace Bakery
       int pastries;
       while(!int.TryParse(stringPastries, out pastries))
       {
-        System.Console.WriteLine("  ---Please enter a number---");
+        System.Console.WriteLine("  ---Please enter a number of pastries---");
         stringPastries = Console.ReadLine();
       }
       Pastry pastryCount = new Pastry(pastries);
