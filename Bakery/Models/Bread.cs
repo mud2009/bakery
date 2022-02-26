@@ -9,7 +9,8 @@ namespace Bakery.Models
       Amount = amount;
     }
 
-    public int GetPrice(){
+    public int GetPrice()
+    {
       if (this.Amount > 0)
       {
         int cost = 0;
