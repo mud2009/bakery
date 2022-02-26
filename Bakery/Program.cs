@@ -8,7 +8,7 @@ namespace Bakery
   {
     public static void Main()
     {
-      System.Console.WriteLine("  Welcome to the Pierre's bakery");
+      System.Console.WriteLine("  Welcome to Pierre's bakery");
       System.Console.WriteLine("  One loaf of bread is $5");
       System.Console.WriteLine("  One pastry is $2");
       System.Console.WriteLine("  How many loaves of bread would you like?");
